@@ -1,29 +1,25 @@
 import React from 'react';
-import { Brain, MessageCircle, LineChart, Cog, Code, Users } from 'lucide-react';
-import { useState } from 'react';
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import Stats from './components/Stats';
+import Contact from './components/Contact';
 
-const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  
+const App = () => {
   return (
-    <nav className="bg-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Brain className="h-8 w-8 text-blue-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">AInnova Solutions</span>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="#services" className="text-gray-600 hover:text-blue-600">Services</a>
-            <a href="#cases" className="text-gray-600 hover:text-blue-600">Case Studies</a>
-            <a href="#pricing" className="text-gray-600 hover:text-blue-600">Pricing</a>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-              Contact Us
-            </button>
-          </div>
+    <div className="min-h-screen bg-white">
+      <Navigation />
+      <Hero />
+      <Services />
+      <Stats />
+      <Contact />
+      <footer className="bg-gray-800 text-white py-12 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p>&copy; 2024 AInnova Solutions. All rights reserved.</p>
         </div>
-      </div>
-    </nav>
+      </footer>
+    </div>
   );
 };
+
+export default App;
