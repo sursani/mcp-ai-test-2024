@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Stats from './components/Stats';
 import CaseStudies from './components/CaseStudies';
+import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Services />
       <Stats />
       <CaseStudies />
+      <Testimonials />
       <Contact />
       <footer className="bg-gray-900 text-gray-400 py-12 text-center border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
