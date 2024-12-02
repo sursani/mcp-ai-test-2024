@@ -3,6 +3,9 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Stats from './components/Stats';
+import Testimonials from './components/Testimonials';
+import CaseStudies from './components/CaseStudies';
+import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -12,6 +15,9 @@ const App = () => {
       <Hero />
       <Services />
       <Stats />
+      <CaseStudies />
+      <Testimonials />
+      <Pricing />
       <Contact />
       <footer className="bg-gray-800 text-white py-12 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
