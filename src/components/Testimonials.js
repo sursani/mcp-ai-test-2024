@@ -2,17 +2,17 @@ import React from 'react';
 import { Star, Quote } from 'lucide-react';
 
 const TestimonialCard = ({ text, author, company }) => (
-  <div className="bg-white p-6 rounded-xl shadow-lg">
-    <Quote className="h-8 w-8 text-blue-600 mb-4" />
+  <div className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
+    <Quote className="h-8 w-8 text-purple-400 mb-4" />
     <div className="flex mb-4">
       {[...Array(5)].map((_, i) => (
-        <Star key={i} className="h-5 w-5 text-yellow-400" fill="#FBBF24" />
+        <Star key={i} className="h-5 w-5 text-purple-400" fill="currentColor" />
       ))}
     </div>
-    <p className="text-gray-600 mb-4">{text}</p>
+    <p className="text-gray-300 mb-4">{text}</p>
     <div>
-      <p className="font-semibold text-gray-900">{author}</p>
-      <p className="text-gray-500">{company}</p>
+      <p className="font-semibold text-white">{author}</p>
+      <p className="text-gray-400">{company}</p>
     </div>
   </div>
 );
@@ -37,11 +37,11 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-          <p className="text-xl text-gray-600">Real results from real businesses</p>
+          <h2 className="text-3xl font-bold text-white mb-4">What Our Clients Say</h2>
+          <p className="text-xl text-gray-300">Real results from real businesses</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
